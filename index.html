@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- The above 4 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+    <!-- Title -->
+    <title>Artistas Colombianos</title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="img/core-img/favicon.ico">
+
+    <!-- Core Stylesheet -->
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="map.css">
+    <style>
+    html, body, #viewDiv {
+      padding: 0;
+      margin: 0;
+      height: 100%;
+      width: 100%;
+    }
+
+  </style>
+    <link rel="stylesheet" href="https://js.arcgis.com/4.11/esri/themes/light/main.css">
+    <script src="https://js.arcgis.com/4.11/"></script>
+    <script src="js/mine.js"></script>
+</head>
+
+<body class="sassy-theme">
+    <!-- ##### Preloader ##### -->
+    <div class="preloader d-flex align-items-center justify-content-center">
+        <div class="circle-preloader">
+            <img src="img/core-img/compact-disc.png" alt="">
+        </div>
+    </div>
+
+    <!-- ##### Header Area Start ##### -->
+    <header class="header-area">
+        <!-- Navbar Area -->
+        <div class="musica-main-menu">
+            <div class="classy-nav-container breakpoint-off">
+                <div class="container-fluid">
+                    <!-- Menu -->
+                    <nav class="classy-navbar justify-content-between" id="musicaNav">
+
+                        <!-- Nav brand -->
+                        <a href="index.html" class="nav-brand"><img src="img/core-img/logo.png" alt=""></a>
+
+                        <!-- Navbar Toggler -->
+                        <div class="classy-navbar-toggler">
+                            <span class="navbarToggler"><span></span><span></span><span></span></span>
+                        </div>
+
+                        <!-- Menu -->
+                        <div class="classy-menu">
+
+                            <!-- close btn -->
+                            <div class="classycloseIcon">
+                                <div class="cross-wrap"><span class="top"></span><span class="bottom"></span></div>
+                            </div>
+
+                            <!-- Nav Start -->
+                            <div class="classynav">
+                                <ul>
+                                    <li><a href="index.html">Home</a></li>
+                                    <li><a href="concert-tours.html">Mapa</a></li>
+                                    <li><a href="#">Generos</a>
+                                        <ul class="dropdown">
+                                            <li><a href="regueton.html">Reguetón</a></li>
+                                            <li><a href="salsa.html">Salsa</a></li>
+                                            <li><a href="rap.html">Rap</a></li>
+                                            <li><a href="rock.html">Rock</a></li>
+                                            <li><a href="vallenato.html">vallenato</a></li>
+                                            <li><a href="popular.html">popular</a></li>
+                                            <li><a href="otros.html">otros</a></li>
+
+                                        </ul>
+                                    </li>
+
+
+                                  <!--<li><a href="contact.html">Contacto</a></li>-->
+                                </ul>
+
+                                <!-- Social Button
+                                <div class="top-social-info">
+                                    <a href="#"><i class="fa fa-pinterest" aria-hidden="true"></i></a>
+                                    <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                                    <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                                    <a href="#"><i class="fa fa-dribbble" aria-hidden="true"></i></a>
+                                    <a href="#"><i class="fa fa-behance" aria-hidden="true"></i></a>
+                                    <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                                </div>-->
+
+                            </div>
+                            <!-- Nav End -->
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- ##### Header Area End ##### -->
+
+    <!-- ##### Hero Area Start ##### -->
+    <section class="hero-area">
+        <div class="hero-slides owl-carousel">
+
+            <!-- Single Hero Slide -->
+            <div class="single-hero-slide d-flex align-items-center justify-content-center">
+                <!-- Slide Img -->
+                <div class="slide-img bg-img" style="background-image: url(img/bg-img/bg-1.jpg);"></div>
+                <!-- Slide Content -->
+                <div class="hero-slides-content text-center">
+                    <h2 data-animation="fadeInUp" data-delay="100ms"> Nuestros <span>Nuestros</span></h2>
+                    <p data-animation="fadeInUp" data-delay="300ms"></p>
+                </div>
+                <!-- Big Text -->
+                <h2 class="big-text">Nuestros</h2>
+            </div>
+
+            <!-- Single Hero Slide -->
+            <div class="single-hero-slide d-flex align-items-center justify-content-center">
+                <!-- Slide Img -->
+                <div class="slide-img bg-img" style="background-image: url(img/bg-img/bg-2.jpg);"></div>
+                <!-- Slide Content -->
+                <div class="hero-slides-content text-center">
+                    <h2 data-animation="fadeInUp" data-delay="100ms">Artistas<span>Artistas</span></h2>
+                    <p data-animation="fadeInUp" data-delay="300ms"></p>
+                </div>
+                <!-- Big Text -->
+                <h2 class="big-text">Artistas</h2>
+            </div>
+
+            <!-- Single Hero Slide
+            <div class="single-hero-slide d-flex align-items-center justify-content-center">
+                <!-- Slide Img
+                <div class="slide-img bg-img" style="background-image: url(img/bg-img/bg-3.jpg);"></div>
+                <!-- Slide Content
+                <div class="hero-slides-content text-center">
+                    <h2 data-animation="fadeInUp" data-delay="100ms">Festival <span>Festival</span></h2>
+                    <p data-animation="fadeInUp" data-delay="300ms">Free Themes</p>
+                </div>
+                <!-- Big Text
+                <h2 class="big-text">Festival</h2>
+            </div>-->
+
+        </div>
+        <!-- bg gradients -->
+        <div class="bg-gradients"></div>
+
+        <!-- Slide Down -->
+        <div class="slide-down" id="scrollDown">
+            <h6>Slide Down</h6>
+            <div class="line"></div>
+        </div>
+    </section>
+    <!-- ##### Hero Area End ##### -->
+
+    <!-- ##### About Us Area Start ##### -->
+
+      <div id="viewDiv"></div>
+
+
+
+    <!-- ##### About Us Area Start ##### -->
+    <div class="about-us-area section-padding-100-0 bg-img bg-overlay" style="background-image: url(img/bg-img/bg-4.jpg);" id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="section-heading">
+                        <h2>Artistas Colombianos</h2>
+                        <h6>De Bogota, Cartagena, Barranquilla y mas, para el mundo.</h6>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <!-- About Thumbnail -->
+                <div class="col-12 col-lg-6">
+                    <div class="about-thumbnail mb-100">
+                        <img src="img/artistas/artistas1.jpg" alt="">
+                    </div>
+                </div>
+                <!-- About Content -->
+                <div class="col-12 col-lg-6">
+                    <div class="about-content mb-100">
+                        <h4>Colombia lleno de sabores</h4>
+                        <p>
+
+                          Colombia es un pais que se ha destacado por su gran variedad en
+                          temas musicales y actualmente es un referente mundial en arte, música y cultura
+                          gracias a estos grandes representantes en el mundo exterior. Artistas como Carlos Vives,
+                          Andrés Cepeda o Silvestre Dangond han alcanzado los primeros puestos en plataformas de musica
+                          como lo es Deezer.
+
+                          Por otro lado, existen ritmos mas diversos como los sinfonicos con la Orquesta
+                          Filarmonica de Bogota, la cumbia, el porro y hasta el mapale con Toto la Momposina, quienes
+                          hacen destacar a Colombia en el mundo entero.
+
+                        </p>
+                          <img src="img/core-img/colombia.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ##### About Us Area End ##### -->
+
+
+
+
+    <!-- jQuery-2.2.4 js -->
+    <script src="js/jquery/jquery-2.2.4.min.js"></script>
+    <!-- Popper js -->
+    <script src="js/bootstrap/popper.min.js"></script>
+    <!-- Bootstrap js -->
+    <script src="js/bootstrap/bootstrap.min.js"></script>
+    <!-- All Plugins js -->
+    <script src="js/plugins/plugins.js"></script>
+    <!-- Active js -->
+    <script src="js/active.js"></script>
+</body>
+
+</html>
