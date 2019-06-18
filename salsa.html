@@ -43,8 +43,8 @@
             var view = new MapView({
               container: "viewDiv",
               map: map,
-              center: [-73.783892,2.8894434],
-              zoom: 5,
+              center: [-73.9,5.5],
+              zoom: 5.5,
               popup: {
                 dockEnabled: true,
                 dockOptions: {
@@ -60,8 +60,9 @@
                type: "simple", // autocasts as new SimpleRenderer()
                symbol: {
                  type: "picture-marker",  // autocasts as new PictureMarkerSymbol()
-                 url: "https://image.flaticon.com/icons/svg/148/148744.svg", // autocasts as new SimpleMarkerSymbol()
-                 size: 5
+                 url: "https://image.flaticon.com/icons/svg/1902/1902182.svg",
+                 width: "40px",
+                 height: "40px" // autocasts as new SimpleMarkerSymbol()
                }
              };
              const layer = new FeatureLayer({
@@ -104,7 +105,7 @@
                         value: {
                           sourceURL:"{imagen}"
                         },
-                          title: "<p>Imagen tomada de {OIMG}</p><div id='Contenedor_Redes' align='center'> <a href='{Spotify}' target='_blank'> <div id='facebookgeo'style=' width: 33px;  height: 35px; border-radius:20px; text-align:center;margin-left:125px; background-image: url(https://image.flaticon.com/icons/svg/174/174872.svg); float: left; background-position: center; background-repeat: no-repeat;'></div></a> <a href='{Youtube}' target='_blank'> <div id='facebookgeo'style=' width: 33px;  height: 35px; margin-left:50px; border-radius:12px;  background-image: url(https://image.flaticon.com/icons/svg/174/174883.svg); float: left; background-position: center; background-repeat: no-repeat;'></div></a><br><iframe src={CANCION} width='300' height='80' frameborder='0' allowtransparency='true' allow='encrypted-media'></iframe> </div>"
+                        title: "<p>Imagen tomada de {OIMG}</p><iframe src={CANCION} width='300' height='80' frameborder='0' allowtransparency='true' allow='encrypted-media'></iframe><div id='Contenedor_Redes' align='center'> <a href='{Spotify}' target='_blank'> <div id='facebookgeo'style=' width: 33px;  height: 35px; border-radius:20px; text-align:center;margin-left:125px; background-image: url(https://image.flaticon.com/icons/svg/174/174872.svg); float: left; background-position: center; background-repeat: no-repeat;'></div></a> <a href='{Youtube}' target='_blank'> <div id='facebookgeo'style=' width: 33px;  height: 35px; margin-left:50px; border-radius:12px;  background-image: url(https://image.flaticon.com/icons/svg/174/174883.svg); float: left; background-position: center; background-repeat: no-repeat;'></div></a><br> </div>"
                       },
 
 
