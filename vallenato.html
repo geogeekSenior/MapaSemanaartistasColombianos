@@ -61,15 +61,16 @@
                symbol: {
                  type: "picture-marker",  // autocasts as new PictureMarkerSymbol()
                  url: "https://image.flaticon.com/icons/svg/836/836825.svg", // autocasts as new SimpleMarkerSymbol()
-                 width: "38px",
-                 height: "38px"
+                 width: "25px",
+                 height: "25px"
                }
              };
              const layer = new FeatureLayer({
               url: "https://services.arcgis.com/8DAUcrpQcpyLMznu/arcgis/rest/services/Artistas/FeatureServer/0",
               //sentencia SQL filtrar
               definitionExpression: "GENERO like '%llenato%'",
-              renderer:icono
+              renderer:icono,
+              copyright:'Spotify,Freeplk'
            });
           map.add(layer);
           var template = {

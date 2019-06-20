@@ -60,15 +60,17 @@
                type: "simple", // autocasts as new SimpleRenderer()
                symbol: {
                  type: "picture-marker",  // autocasts as new PictureMarkerSymbol()
-                 url: "https://image.flaticon.com/icons/svg/148/148744.svg", // autocasts as new SimpleMarkerSymbol()
-                 size: 5
+                 url: "https://image.flaticon.com/icons/svg/135/135759.svg", // autocasts as new SimpleMarkerSymbol()
+                 width: "25px",
+                 height:"25px"
                }
              };
              const layer = new FeatureLayer({
               url: "https://services.arcgis.com/8DAUcrpQcpyLMznu/arcgis/rest/services/Artistas/FeatureServer/0",
               //sentencia SQL filtrar
               definitionExpression: "GENERO like '%opular%'",
-              renderer:icono
+              renderer:icono,
+              copyright:'Spotify,smashicons'
            });
           map.add(layer);
           var template = {
